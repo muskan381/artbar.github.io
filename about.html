@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Gallery</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        footer {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Madrone Art Bar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                    <a class="nav-link" href="/aboutmadrone.html">About</a>
+                  </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+                    <div>
+                        <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#signinModal">Sign Up</button>
+                        <!--Login Button trigger modal -->
+
+                        <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Login</button>
+                    </div>
+
+                    <!-- signin Modal -->
+                    <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="signModalLabel">Sign Up To Madrone Art Bar</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleidInputEmail1" class="form-label">Email address</label>
+                                            <input type="emailid" class="form-control" id="exampleidInputEmail1"
+                                                aria-describedby="emailidHelp">
+                                            <div id="emailidHelp" class="form-text">We'll never share your email with
+                                                anyone
+                                                else.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Create
+                                                Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword11">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Confirm
+                                                Password</label>
+                                            <input type="cfpassword" class="form-control" id="cfexampleInputPassword11">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck11">
+                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Login Modal -->
+                    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="loginModalLabel">Login To Madrone Art Bar</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone
+                                                else.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+        <div class="bg-dark collapse" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <!-- <h4 class="text-white">Gallery</h4> -->
+                        <p class="text-muted">Checkout some Highlights of Calligraphy and Sketches you can also
+                            customise and order from us.</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <!-- <h4 class="text-white" href="/contactmadrone.html">Contact</h4> -->
+                        <ul class="list-unstyled">
+                            <li><a href="/contact.html" class="text-white"><strong>Contact Us</strong></a></li>
+                            <li><a href="https://www.pin.it/3WTvBwK" class="text-white">Follow on Pinterest</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bookmark-heart-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M2 15.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v13.5zM8 4.41c1.387-1.425 4.854 1.07 0 4.277C3.146 5.48 6.613 2.986 8 4.412z" />
+                    </svg>
+                    <strong>Art Bar</strong>
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container my-4">
+
+        <div class="row featurette d-flex justify-content-center align align-items-center">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">It all started with simple idea. <span class="text-muted">It’ll blow
+                        your mind.</span>
+                </h2>
+                <p class="lead">This was just done by the creator in the boredom of lockdown,
+                    Hence which extended and we are selling customized handmade calligraphy frames in a very affordable
+                    price</p>
+            </div>
+            <div class="col-md-4">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="700"
+                    height="500" src="/h1.jpg" alt="">
+                <title>Placeholder</title>
+                <rect width="500" height="500" fill="#eee"></rect><text x="50" y="50" fill="#aaa" dy=".3em"></text>
+            </div>
+        </div>
+
+        <div class="row featurette d-flex justify-content-center align align-items-center">
+            <div class="col-md-7 order-md-2 ">
+                <h2 class="featurette-heading">We started Madrone art bar in 2019. <span class="text-muted">If you are
+                        good at something never do it for free</span>
+                </h2>
+                <p class="lead">This was just made by the creator in the office while many colleagues thought this was a
+                    print. The creator knew she can be better and charge some good amount for her art</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="/h9.jpg" alt="">
+
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+            </div>
+        </div>
+
+        <div class="row featurette d-flex justify-content-center align align-items-center">
+
+            <div class="col-md-7">
+                <h2 class="featurette-heading">First Portrait Sketch. <span class="text-muted">A Simple yet illusional
+                        Sketch.</span>
+                </h2>
+                <p class="lead">We have also started taking orders for sketched and painting for beautiful home decor.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500" src="/h3.jpg" alt="">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+            </div>
+        </div>
+    </div>
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+            <p>© 2020–2021 Madrone Art Bar, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </div>
+    </footer>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

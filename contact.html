@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Madrone Art Bar</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid container-fluid">
+                <a class="navbar-brand" href="#">Madrone Art Bar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal"
+                        data-bs-target="#signinModal">Sign Up</button>
+                    <!--Login Button trigger modal -->
+
+                    <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                </div>
+
+                <!-- signin Modal -->
+                <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="signModalLabel">Sign Up To Madrone Art Bar</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleidInputEmail1" class="form-label">Email address</label>
+                                        <input type="emailid" class="form-control" id="exampleidInputEmail1"
+                                            aria-describedby="emailidHelp">
+                                        <div id="emailidHelp" class="form-text">We'll never share your email with anyone
+                                            else.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Create Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword11">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                                        <input type="cfpassword" class="form-control" id="cfexampleInputPassword11">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck11">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Login Modal -->
+                <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="loginModalLabel">Login To Madrone Art Bar</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone
+                                            else.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+
+    <!-- <div class="container"> -->
+    <div class="container my-4">
+        <h2>Reach Madrone Art Bar</h2>
+    </div>
+    <div class="container my-4">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <br>
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+            <option selected>Select the Topic</option>
+            <option value="1">Calligraphy</option>
+            <option value="2">Sketches</option>
+            <option value="3">Resin Art</option>
+            <option value="4">Macrame</option>
+        </select>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Are you a member?
+            </label>
+            <br>
+            <br>
+            <div class="mb-3">
+                <label for="exampleFeedControlTextarea1" class="form-label">Feedback</label>
+                <textarea class="form-control" id="exampleFeedControlTextarea1" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary">Submit</button>
+            <br>
+        </div>
+
+    </div>
+    <br><br>
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2020–2021 Madrone Art Bar, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
